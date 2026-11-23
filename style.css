@@ -1,0 +1,36 @@
+:root{--paper:#F2F5F4;--ink:#16232B;--muted:#4F5F68;--accent:#0B6E6E;--panel:#DCE9E6;--line:#C5D3D0}
+@media (prefers-color-scheme:dark){:root{--paper:#11191D;--ink:#E7EFEE;--muted:#A3B3B8;--accent:#5FC4BC;--panel:#1B2A2E;--line:#2C3E43}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.125rem/1.65 "Source Serif 4",Georgia,serif;min-height:100vh;display:flex;flex-direction:column}
+main{flex:1}img{max-width:100%;height:auto;display:block}
+a{color:var(--accent);text-underline-offset:3px}a:focus-visible,button:focus-visible,.track:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3,.logo,nav,.btn,button,footer{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif}
+h1{font-size:clamp(2.4rem,6.5vw,4.6rem);line-height:1.02;letter-spacing:-.03em;margin:0 0 1.2rem;font-weight:700}
+h2{font-size:1.7rem;letter-spacing:-.015em;margin:2.4rem 0 .5rem;line-height:1.2}h3{font-size:1.2rem;margin:0 0 .3rem;line-height:1.25}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--ink);color:var(--paper);padding:.5rem 1rem;z-index:9}
+.top{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;align-items:baseline;padding:1.25rem clamp(1rem,4vw,3rem);border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:1.3rem;text-decoration:none;color:var(--ink);letter-spacing:-.02em}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;font-size:1rem}nav a{color:var(--muted);text-decoration:none;padding:.2rem 0;border-bottom:2px solid transparent}
+nav a:hover{color:var(--ink)}nav a[aria-current]{color:var(--ink);border-color:var(--accent)}
+.wrap{max-width:1180px;margin:0 auto;padding:clamp(2rem,6vw,4.5rem) clamp(1rem,4vw,3rem)}.narrow{max-width:760px;margin-left:0}
+@media(min-width:1180px){.narrow{margin-left:max(0px,calc(50% - 590px))}}
+.hero{display:grid;gap:2.5rem;align-items:center}@media(min-width:800px){.hero{grid-template-columns:1.4fr 1fr}}
+.lead{font-size:1.35rem;line-height:1.55;max-width:34em}.portrait{border-radius:6px;width:100%;max-height:520px;object-fit:cover}
+.cta{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;margin-top:1.8rem;font-family:"Bricolage Grotesque",sans-serif}
+.btn{background:var(--ink);color:var(--paper);padding:.75rem 1.3rem;border-radius:4px;text-decoration:none;font-weight:500}.btn:hover{background:var(--accent);color:#fff}
+.strip{background:var(--panel);display:flex;gap:2.5rem;overflow-x:auto;padding:2rem clamp(1rem,4vw,3rem);align-items:center}.strip img{height:150px;width:auto;flex:none}
+.grid{display:grid;gap:2.5rem 2rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.card{color:inherit;text-decoration:none;display:block}.card p{margin:.2rem 0 0;color:var(--muted);font-size:1rem;line-height:1.5}
+.thumb{background:var(--panel);aspect-ratio:4/3;border-radius:6px;display:grid;place-items:center;overflow:hidden;margin-bottom:.9rem;padding:6%}
+.thumb img{max-height:100%;max-width:100%;object-fit:contain}.ph{font:500 1.05rem "Bricolage Grotesque",sans-serif;color:var(--muted);text-align:center;padding:1rem;border:1.5px dashed var(--line);border-radius:4px;width:100%;height:100%;display:grid;place-items:center}
+.card:hover h3{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.project{max-width:1180px;margin:0 auto;padding:clamp(2rem,5vw,4rem) clamp(1rem,4vw,3rem)}
+.back{font:500 1rem "Bricolage Grotesque",sans-serif;display:inline-block;margin-bottom:1.5rem}
+.prose{max-width:38em}.prose p{margin:0 0 1.1em}.prose ul{padding-left:1.2em}
+.visuals{margin-top:2.5rem;display:grid;gap:2rem;max-width:980px}figure{margin:0}figure img{width:100%;border-radius:4px;background:var(--panel)}
+figcaption{font-size:.95rem;color:var(--muted);margin-top:.5rem}
+.slides{background:var(--panel);border-radius:6px;padding:1rem}.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:1rem}
+.track img{flex:0 0 100%;scroll-snap-align:center;object-fit:contain;max-height:80vh;width:100%}
+.ctl{display:flex;gap:.6rem;margin-top:.8rem}button{font-size:1rem;background:transparent;color:var(--ink);border:1.5px solid var(--ink);border-radius:4px;padding:.45rem 1rem;cursor:pointer}button:hover{background:var(--ink);color:var(--paper)}
+footer{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;padding:1.5rem clamp(1rem,4vw,3rem);border-top:1px solid var(--line);font-size:.95rem;color:var(--muted)}
