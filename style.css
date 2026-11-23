@@ -54,3 +54,11 @@ nav>a:hover,nav>a[aria-current]{border-color:var(--navy)}.ic svg{width:22px;heig
 .ctl{display:flex;gap:.6rem;margin-top:.8rem;justify-content:center}
 button{font-size:.85rem;font-stretch:112%;text-transform:uppercase;background:transparent;color:var(--navy);border:1.5px solid var(--navy);border-radius:99px;padding:.45rem 1.3rem;cursor:pointer}button:hover{background:var(--navy);color:var(--white)}
 footer{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;padding:1.5rem var(--pad);background:var(--pink);font-size:.9rem}
+.word{font:800 clamp(1.8rem,4.5vw,3rem)/1.05 Archivo,"Arial Black",sans-serif;font-stretch:125%;text-transform:uppercase;text-align:center;overflow-wrap:anywhere;padding:1rem}
+.tools{display:grid;grid-template-columns:max-content 1fr;gap:.6rem 1.5rem;margin:2.5rem 0 0;font-size:1rem}.tools dt{font-weight:700}.tools dd{margin:0}
+@media(max-width:600px){.tools{grid-template-columns:1fr}.tools dd{margin-bottom:.6rem}}
+.exp{display:grid;gap:2rem;margin-bottom:1rem}.job{display:grid;gap:.3rem 2rem}@media(min-width:760px){.job{grid-template-columns:200px 1fr}}
+.when{font-weight:700;font-size:.95rem;color:var(--olive)}.job h3{margin:0}.org{margin:0 0 .5rem}.job ul{margin:0;padding-left:1.2em;max-width:44em}.job li{margin-bottom:.35rem}
+.prose ul{padding-left:1.2em}
+.status{display:inline-flex;align-items:center;gap:.6rem;background:var(--yellow);border-radius:99px;padding:.4rem 1rem;font-size:.95rem;font-weight:700;margin:0 0 1.4rem!important}
+.status span{width:.6rem;height:.6rem;border-radius:50%;background:#2f9e5f;flex:none}
