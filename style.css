@@ -62,3 +62,16 @@ footer{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;
 .prose ul{padding-left:1.2em}
 .status{display:inline-flex;align-items:center;gap:.6rem;background:var(--yellow);border-radius:99px;padding:.4rem 1rem;font-size:.95rem;font-weight:700;margin:0 0 1.4rem!important}
 .status span{width:.6rem;height:.6rem;border-radius:50%;background:#2f9e5f;flex:none}
+.traci .lead{max-width:36em}.meta{max-width:44em;font-size:1rem;margin:0 0 1.8rem}
+.keyfacts{list-style:none;margin:0 0 2.5rem;padding:0;display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.keyfacts li{background:var(--pink);border-radius:20px;padding:1.1rem 1.3rem;display:flex;flex-direction:column;gap:.25rem;font-size:.95rem}.keyfacts strong{font:800 1.15rem Archivo,Arial,sans-serif;font-stretch:125%}
+.traci h2{margin:3.2rem 0 1.2rem}.traci figure img,.traci video{width:100%;border-radius:var(--r);background:var(--blue);display:block}
+.pair{display:grid;gap:1.2rem;align-items:start;margin:1.5rem 0}@media(min-width:760px){.pair{grid-template-columns:1fr 1fr}}
+.trio{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:1.5rem 0}
+.trio.notes>div{background:var(--yellow);border-radius:var(--r);padding:1.5rem}.trio.notes p{margin:0;font-size:1rem}
+.cols{display:grid;gap:2rem;align-items:center;margin:1rem 0}@media(min-width:860px){.cols{grid-template-columns:1.1fr 1fr}}
+.traci .prose{max-width:none}.traci .prose p{max-width:36em}.vid.narrow{max-width:300px}.traci .pair .narrow{justify-self:center}
+.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:1rem;background:var(--cream,#fff);border-radius:20px;overflow:hidden}
+caption{text-align:left;font-weight:700;padding:0 0 .6rem}th,td{padding:.7rem 1rem;text-align:left;border-bottom:1px solid var(--blue)}th{background:var(--blue)}
+.pagehead{width:100%}.trio.photos figure img{aspect-ratio:3/4;object-fit:cover}.trio.photos{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.wide{margin:2.5rem 0 0}.wide img{max-height:560px;object-fit:cover}
